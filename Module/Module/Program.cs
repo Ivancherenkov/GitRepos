@@ -28,6 +28,7 @@ namespace Module
             {
                 Console.Write(i + " ");
             }
+
             Console.WriteLine(" ");
 
             int[] even = new int[o];
@@ -46,6 +47,7 @@ namespace Module
             {
                 Console.Write(i + " ");
             }
+
             Console.WriteLine(" ");
 
             int[] odd = new int[o];

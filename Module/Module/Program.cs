@@ -1,6 +1,6 @@
 ﻿using System;
 
-int p = 10;
+int p = 10; // Указываем количество элементов в массиве
 int[] origin = new int[p];
 int o = 0;
 int e = 0;
@@ -19,6 +19,8 @@ for (int i = 0; i < origin.Length; i++)
     }
 }
 
+Console.Write("Изначальный массив:" + " ");
+
 foreach (int i in origin)
 {
     Console.Write(i + " ");
@@ -28,7 +30,7 @@ Console.WriteLine(" ");
 
 int[] even = new int[p];
 
-for (int i = 0; i < e; i++)
+for (int i = 0; i < p; i++)
 {
     int с = origin[i];
 
@@ -37,6 +39,8 @@ for (int i = 0; i < e; i++)
         even[i] = с;
     }
 }
+
+Console.Write("Четный массив:" + " ");
 
 foreach (int i in even)
 {
@@ -47,7 +51,7 @@ Console.WriteLine(" ");
 
 int[] odd = new int[p];
 
-for (int i = 0; i < o; i++)
+for (int i = 0; i < p; i++)
 {
     int x = origin[i];
 
@@ -56,6 +60,8 @@ for (int i = 0; i < o; i++)
         odd[i] = x;
     }
 }
+
+Console.Write("Нечетный массив:" + " ");
 
 foreach (int i in odd)
 {

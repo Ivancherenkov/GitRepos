@@ -2,7 +2,7 @@
 using System.Text;
 
 int p = 10; // Указываем количество элементов в массиве
-int[] origin = new int[p];
+int[] initial = new int[p];
 int o = 0;
 int e = 0;
 string alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -10,11 +10,11 @@ string alphabet = "abcdefghijklmnopqrstuvwxyz";
 Console.Write(alphabet);
 Console.WriteLine();
 
-for (int i = 0; i < origin.Length; i++)
+for (int i = 0; i < initial.Length; i++)
 {
-    origin[i] = new Random().Next(1, 26);
+    initial[i] = new Random().Next(1, 26);
 
-    if (origin[i] % 2 == 0)
+    if (initial[i] % 2 == 0)
     {
         e++;
     }
@@ -26,7 +26,7 @@ for (int i = 0; i < origin.Length; i++)
 
 Console.Write("Изначальный массив:" + " ");
 
-foreach (int i in origin)
+foreach (int i in initial)
 {
     Console.Write(i + " ");
 }
@@ -37,9 +37,9 @@ int[] even = new int[p];        // Ввод четного массива
 
 for (int i = 0; i < p; i++)
 {
-    int с = origin[i];
+    int с = initial[i];
 
-    if (origin[i] % 2 == 0)
+    if (initial[i] % 2 == 0)
     {
         even[i] = с;
     }
@@ -58,9 +58,9 @@ int[] odd = new int[p];         // Ввод нечетного массива
 
 for (int i = 0; i < p; i++)
 {
-    int x = origin[i];
+    int x = initial[i];
 
-    if (origin[i] % 2 != 0)
+    if (initial[i] % 2 != 0)
     {
         odd[i] = x;
     }
@@ -78,11 +78,3 @@ Console.WriteLine(" ");
 string[] letters = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 
 char[] first = new char[o];
-for (int i = 0; i < o; i++)
-{
-    int u =odd[i]
-    if ( = u)
-    {
-        first[i] = letters[i];
-    }
-}

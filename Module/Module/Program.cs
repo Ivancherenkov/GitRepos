@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Text;
 
 int p = 10; // Указываем количество элементов в массиве
 int[] origin = new int[p];
 int o = 0;
 int e = 0;
+string alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+Console.Write(alphabet);
+Console.WriteLine();
 
 for (int i = 0; i < origin.Length; i++)
 {
@@ -28,7 +33,7 @@ foreach (int i in origin)
 
 Console.WriteLine(" ");
 
-int[] even = new int[p];
+int[] even = new int[p];        // Ввод четного массива
 
 for (int i = 0; i < p; i++)
 {
@@ -49,7 +54,7 @@ foreach (int i in even)
 
 Console.WriteLine(" ");
 
-int[] odd = new int[p];
+int[] odd = new int[p];         // Ввод нечетного массива
 
 for (int i = 0; i < p; i++)
 {
@@ -66,4 +71,18 @@ Console.Write("Нечетный массив:" + " ");
 foreach (int i in odd)
 {
     Console.Write(i + " ");
+}
+
+Console.WriteLine(" ");
+
+string[] letters = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+
+char[] first = new char[o];
+for (int i = 0; i < o; i++)
+{
+    int u =odd[i]
+    if ( = u)
+    {
+        first[i] = letters[i];
+    }
 }

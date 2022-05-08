@@ -5,9 +5,7 @@ int p = 10; // Указываем количество элементов в м�
 int[] initial = new int[p];
 int o = 0;
 int e = 0;
-string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-Console.Write(alphabet);
 Console.WriteLine();
 
 for (int i = 0; i < initial.Length; i++)
@@ -75,6 +73,10 @@ foreach (int i in odd)
 
 Console.WriteLine(" ");
 
-string[] letters = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-
 char[] first = new char[o];
+
+string alphabet = "/abcdefghijklmnopqrstuvwxyz";
+string test = "a";
+int pos = alphabet.IndexOf(test);
+
+Console.Write(pos);
